@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AL Wahda Private School - Observation Tool</title>
+    style.css
+</head>
+<body>
+
+<div class="container">
+    <header>
+        logo.png" class="logo">
+        <h1>AL Wahda Private School</h1>
+        <h2>Classroom Observation Tool</h2>
+    </header>
+
+    <form id="observationForm">
+        
+        <label>Teacher Name:</label>
+        <input type="text" id="teacherName" required>
+
+        <label>Observer Name:</label>
+        <input type="text" id="observerName" required>
+
+        <label>Grade / Subject:</label>
+        <input type="text" id="gradeSubject" required>
+
+        <label>Date:</label>
+        <input type="date" id="date" required>
+
+        <label>Lesson Objective:</label>
+        <textarea id="lessonObjective" required></textarea>
+
+        <label>Classroom Environment (1–5):</label>
+        <input type="number" id="environment" min="1" max="5">
+
+        <label>Student Engagement (1–5):</label>
+        <input type="number" id="engagement" min="1" max="5">
+
+        <label>Teaching Strategies (1–5):</label>
+        <input type="number" id="strategies" min="1" max="5">
+
+        <label>Checklist:</label>
+        <select id="checkboxOption">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Partially">Partially</option>
+        </select>
+
+        <label>Comments:</label>
+        <textarea id="comments"></textarea>
+
+        <button type="button" onclick="generatePDF()">Download PDF Report</button>
+    </form>
+</div>
+
+https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js
+script.js
+
+</body>
+</html>
