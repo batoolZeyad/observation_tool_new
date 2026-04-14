@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>AL Wahda Private School - Observation Tool</title>
-    style.css
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
     <header>
-        logo.png" class="logo">
+        <img src="logo.png" class="logo" alt="School Logo">
         <h1>AL Wahda Private School</h1>
         <h2>Classroom Observation Tool</h2>
     </header>
 
     <form id="observationForm">
-        
+
         <label>Teacher Name:</label>
         <input type="text" id="teacherName" required>
 
@@ -54,8 +56,12 @@
     </form>
 </div>
 
-https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js
-script.js
+<!-- ✅ jsPDF Library (THIS IS CRITICAL) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- ✅ Your JavaScript -->
+<script src="script.js"></script>
 
 </body>
 </html>
+``
