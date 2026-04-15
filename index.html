@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>AL Wahda Private School - Observation Tool</title>
 
-    <!-- Link CSS -->
+    <!-- ✅ CSS properly linked -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,19 +19,19 @@
     <form id="observationForm">
 
         <label>Teacher Name:</label>
-        <input type="text" id="teacherName" required>
+        <input type="text" id="teacherName">
 
         <label>Observer Name:</label>
-        <input type="text" id="observerName" required>
+        <input type="text" id="observerName">
 
         <label>Grade / Subject:</label>
-        <input type="text" id="gradeSubject" required>
+        <input type="text" id="gradeSubject">
 
         <label>Date:</label>
-        <input type="date" id="date" required>
+        <input type="date" id="date">
 
         <label>Lesson Objective:</label>
-        <textarea id="lessonObjective" required></textarea>
+        <textarea id="lessonObjective"></textarea>
 
         <label>Classroom Environment (1–5):</label>
         <input type="number" id="environment" min="1" max="5">
@@ -44,9 +44,9 @@
 
         <label>Checklist:</label>
         <select id="checkboxOption">
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-            <option value="Partially">Partially</option>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Partially</option>
         </select>
 
         <label>Comments:</label>
@@ -56,12 +56,11 @@
     </form>
 </div>
 
-<!-- ✅ jsPDF Library (THIS IS CRITICAL) -->
+<!-- ✅ jsPDF library (REQUIRED for download) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-<!-- ✅ Your JavaScript -->
+<!-- ✅ Your script -->
 <script src="script.js"></script>
 
 </body>
 </html>
-``
