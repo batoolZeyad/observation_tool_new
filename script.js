@@ -1,32 +1,17 @@
 function generatePDF() {
-    const { jsPDF } = window.jspdf;
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF('p','mm','a4');
 
-    const doc = new jsPDF();
+  doc.setFontSize(14);
+  doc.text("Online Learning Observation Form", 105, 15, null, null, "center");
 
-    doc.setFontSize(16);
-    doc.text("AL Wahda Private School", 10, 10);
-    doc.setFontSize(12);
-    doc.text("Classroom Observation Report", 10, 20);
+  doc.setFontSize(10);
+  doc.text("Teacher: " + teacherName.value, 10, 30);
+  doc.text("Observer: " + observerName.value, 10, 36);
+  doc.text("Date: " + date.value, 10, 42);
 
-    let y = 35;
+  doc.text("Final Comments:", 10, 52);
+  doc.text(finalComments.value || "-", 10, 58, {maxWidth:180});
 
-    const fields = {
-        "Teacher Name": teacherName.value,
-        "Observer Name": observerName.value,
-        "Grade / Subject": gradeSubject.value,
-        "Date": date.value,
-        "Lesson Objective": lessonObjective.value,
-        "Classroom Environment (1–5)": environment.value,
-        "Student Engagement (1–5)": engagement.value,
-        "Teaching Strategies (1–5)": strategies.value,
-        "Checklist": checkboxOption.value,
-        "Comments": comments.value
-    };
-
-    for (const [label, value] of Object.entries(fields)) {
-        doc.text(`${label}: ${value}`, 10, y);
-        y += 10;
-    }
-
-    doc.save("Observation_Report.pdf");
+  doc.save("Observation_Form.pdf");
 }
