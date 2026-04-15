@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Online Learning Observation Form</title>
 
-  <!-- CSS -->
+  <!-- ✅ CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,30 +28,27 @@
     <img src="logo2.png" class="logo" alt="School Logo">
   </div>
 
-  <!-- INFORMATION ROW -->
+  <!-- INFO -->
   <div class="info">
     <div>
       <label>Teacher Name</label>
       <input id="teacherName">
     </div>
-
     <div>
       <label>Observer Name</label>
       <input id="observerName">
     </div>
-
     <div>
       <label>Date</label>
       <input type="date" id="date">
     </div>
-
     <div>
       <label>Time</label>
       <input type="time" id="time">
     </div>
   </div>
 
-  <!-- OBSERVATION TABLE -->
+  <!-- TABLE -->
   <table>
     <thead>
       <tr>
@@ -60,15 +57,17 @@
         <th>Comments</th>
       </tr>
     </thead>
+
     <tbody>
 
+      <!-- ROW 1 -->
       <tr>
         <td>Lesson Objectives & Success Criteria</td>
         <td>
           Objectives clearly stated and match with pacing guides and lesson plans approved for the week.
         </td>
         <td>
-          <label><input type="radio" name="r1"> Observed</label>
+          <label><input type="radio" name="r1"> Observed</label><br>
           <label><input type="radio" name="r1"> Not Observed</label>
 
           <select>
@@ -81,15 +80,132 @@
         </td>
       </tr>
 
+      <!-- ROW 2 -->
       <tr>
         <td>Student Engagement</td>
         <td>
           Questioning techniques and interactive activities enable student engagement. All activities are suitable for online learning mode.
         </td>
         <td>
-          <label><input type="radio" name="r2"> Observed</label>
+          <label><input type="radio" name="r2"> Observed</label><br>
           <label><input type="radio" name="r2"> Not Observed</label>
 
           <select>
             <option>Insert Quick Comment</option>
             <option>High student engagement</option>
+            <option>Partial engagement</option>
+          </select>
+
+          <textarea placeholder="Additional comments..."></textarea>
+        </td>
+      </tr>
+
+      <!-- ROW 3 -->
+      <tr>
+        <td>Differentiation / Inclusion</td>
+        <td>
+          Different tasks and activities are provided for different levels including SEN students with appropriate challenge and depth.
+        </td>
+        <td>
+          <label><input type="radio" name="r3"> Observed</label><br>
+          <label><input type="radio" name="r3"> Not Observed</label>
+
+          <select>
+            <option>Insert Quick Comment</option>
+            <option>Effective differentiation</option>
+            <option>Limited differentiation</option>
+          </select>
+
+          <textarea placeholder="Additional comments..."></textarea>
+        </td>
+      </tr>
+
+      <!-- ROW 4 -->
+      <tr>
+        <td>Class Management & Wellbeing</td>
+        <td>
+          Behaviour for learning and wellbeing procedures are clearly reflected in the lesson.
+        </td>
+        <td>
+          <label><input type="radio" name="r4"> Observed</label><br>
+          <label><input type="radio" name="r4"> Not Observed</label>
+
+          <select>
+            <option>Insert Quick Comment</option>
+            <option>Well managed environment</option>
+            <option>Needs improvement</option>
+          </select>
+
+          <textarea placeholder="Additional comments..."></textarea>
+        </td>
+      </tr>
+
+      <!-- ROW 5 -->
+      <tr>
+        <td>Use of Technology / Platforms and Online Tools</td>
+        <td>
+          Effective use of technology and online tools to enhance learning.
+        </td>
+        <td>
+          <label><input type="radio" name="r5"> Observed</label><br>
+          <label><input type="radio" name="r5"> Not Observed</label>
+
+          <select>
+            <option>Insert Quick Comment</option>
+            <option>Technology used effectively</option>
+            <option>Limited use of technology</option>
+          </select>
+
+          <textarea placeholder="Additional comments..."></textarea>
+        </td>
+      </tr>
+
+      <!-- ROW 6 -->
+      <tr>
+        <td>Classroom Routines / Transitions</td>
+        <td>
+          Overall structure is constructive and positive with smooth routines and transitions.
+        </td>
+        <td>
+          <label><input type="radio" name="r6"> Observed</label><br>
+          <label><input type="radio" name="r6"> Not Observed</label>
+
+          <select>
+            <option>Insert Quick Comment</option>
+            <option>Smooth transitions</option>
+            <option>Transitions need improvement</option>
+          </select>
+
+          <textarea placeholder="Additional comments..."></textarea>
+        </td>
+      </tr>
+
+      <!-- ROW 7 -->
+      <tr>
+        <td>Other Areas Related to the Observation</td>
+        <td>Enter observations here.</td>
+        <td>
+          <textarea placeholder="Additional comments..."></textarea>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <!-- FINAL COMMENTS -->
+  <div class="final">
+    <h3>Final Comments & Summary</h3>
+    <textarea id="finalComments"
+      placeholder="Enter final overall comments, feedback or summary here..."></textarea>
+  </div>
+
+</div>
+
+<!-- ✅ jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- ✅ Your JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
