@@ -1,66 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>AL Wahda Private School - Observation Tool</title>
-
-    <!-- ✅ CSS properly linked -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Online Learning Observation Form</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <header>
-        <img src="logo.png" class="logo" alt="School Logo">
-        <h1>AL Wahda Private School</h1>
-        <h2>Classroom Observation Tool</h2>
-    </header>
+<div class="page">
 
-    <form id="observationForm">
+  <!-- HEADER -->
+  <div class="header">
+    <img src="logo.png" class="logo left">
+    <div class="title">
+      <h1>ONLINE LEARNING</h1>
+      <h2>OBSERVATION FORM</h2>
+    </div>
+    <img src="logo2.png" class="logo right">
+  </div>
 
-        <label>Teacher Name:</label>
-        <input type="text" id="teacherName">
+  <!-- INFO ROW -->
+  <div class="info-row">
+    <div>Teacher Name:<input id="teacherName"></div>
+    <div>Observer Name:<input id="observerName"></div>
+    <div>Date:<input type="date" id="date"></div>
+    <div>Time:<input type="time" id="time"></div>
+  </div>
 
-        <label>Observer Name:</label>
-        <input type="text" id="observerName">
+  <!-- TABLE -->
+  <table>
+    <thead>
+      <tr>
+        <th>Area</th>
+        <th>Observation</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
 
-        <label>Grade / Subject:</label>
-        <input type="text" id="gradeSubject">
-
-        <label>Date:</label>
-        <input type="date" id="date">
-
-        <label>Lesson Objective:</label>
-        <textarea id="lessonObjective"></textarea>
-
-        <label>Classroom Environment (1–5):</label>
-        <input type="number" id="environment" min="1" max="5">
-
-        <label>Student Engagement (1–5):</label>
-        <input type="number" id="engagement" min="1" max="5">
-
-        <label>Teaching Strategies (1–5):</label>
-        <input type="number" id="strategies" min="1" max="5">
-
-        <label>Checklist:</label>
-        <select id="checkboxOption">
-            <option>Yes</option>
-            <option>No</option>
-            <option>Partially</option>
-        </select>
-
-        <label>Comments:</label>
-        <textarea id="comments"></textarea>
-
-        <button type="button" onclick="generatePDF()">Download PDF Report</button>
-    </form>
-</div>
-
-<!-- ✅ jsPDF library (REQUIRED for download) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
-<!-- ✅ Your script -->
-<script src="script.js"></script>
-
-</body>
-</html>
+      <tr>
+        <td>Lesson Objectives & Success Criteria</td>
+        <td>Objectives clearly stated and linked with pacing.</td>
+        <td>
+          <label><input type="checkbox"> Observed</label>
