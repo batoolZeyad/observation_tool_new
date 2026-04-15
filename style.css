@@ -64,6 +64,28 @@ input, select, textarea {
   margin-top:4px;
 }
 
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.signature-box {
+  width: 40%;
+  text-align: center;
+}
+
+.signature-line {
+  border-top: 2px solid #000;
+  margin-bottom: 6px;
+}
+
+.signature-box p {
+  font-size: 12px;
+  margin: 0;
+}
+
 table {
   width:100%;
   border-collapse:collapse;
