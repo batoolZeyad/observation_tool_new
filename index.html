@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Online Learning Observation Form</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Online Learning Observation Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -12,35 +12,58 @@
 
   <!-- HEADER -->
   <div class="header">
-    <img src="logo.png" class="logo left">
+    <img src="logo.png" class="logo">
     <div class="title">
       <h1>ONLINE LEARNING</h1>
       <h2>OBSERVATION FORM</h2>
+      <h3>نموذج ملاحظة التعلم عن بُعد</h3>
     </div>
-    <img src="logo2.png" class="logo right">
+    <img src="logo2.png" class="logo">
   </div>
 
   <!-- INFO ROW -->
   <div class="info-row">
-    <div>Teacher Name:<input id="teacherName"></div>
-    <div>Observer Name:<input id="observerName"></div>
-    <div>Date:<input type="date" id="date"></div>
-    <div>Time:<input type="time" id="time"></div>
+    <div>
+      <label>Teacher Name<br><span class="ar">اسم المعلم</span></label>
+      <input id="teacherName">
+    </div>
+
+    <div>
+      <label>Observer Name<br><span class="ar">اسم الملاحظ</span></label>
+      <input id="observerName">
+    </div>
+
+    <div>
+      <label>Date<br><span class="ar">التاريخ</span></label>
+      <input type="date" id="date">
+    </div>
+
+    <div>
+      <label>Time<br><span class="ar">الوقت</span></label>
+      <input type="time" id="time">
+    </div>
   </div>
 
   <!-- TABLE -->
   <table>
     <thead>
       <tr>
-        <th>Area</th>
-        <th>Observation</th>
-        <th>Comments</th>
+        <th>
+          Area<br><span class="ar">المجال</span>
+        </th>
+        <th>
+          Observation<br><span class="ar">الملاحظة</span>
+        </th>
+        <th>
+          Comments<br><span class="ar">التعليقات</span>
+        </th>
       </tr>
     </thead>
+
     <tbody>
 
+      <!-- ROW 1 -->
       <tr>
-        <td>Lesson Objectives & Success Criteria</td>
-        <td>Objectives clearly stated and linked with pacing.</td>
         <td>
-          <label><input type="checkbox"> Observed</label>
+          Lesson Objectives & Success Criteria<br>
+          <span class="ar">أهداف الدرس ومعايير النجاح</span>
