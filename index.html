@@ -3,67 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <title>Online Learning Observation Form</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="page">
 
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <button onclick="generatePDF()">Save to PDF</button>
+  </div>
+
   <!-- HEADER -->
   <div class="header">
-    <img src="logo.png" class="logo">
+    <img src="logo.png" class="logo" alt="School Logo">
+
     <div class="title">
       <h1>ONLINE LEARNING</h1>
       <h2>OBSERVATION FORM</h2>
-      <h3>نموذج ملاحظة التعلم عن بُعد</h3>
     </div>
-    <img src="logo2.png" class="logo">
+
+    <img src="logo2.png" class="logo" alt="School Logo">
   </div>
 
-  <!-- INFO ROW -->
-  <div class="info-row">
+  <!-- INFORMATION ROW -->
+  <div class="info">
     <div>
-      <label>Teacher Name<br><span class="ar">اسم المعلم</span></label>
+      <label>Teacher Name</label>
       <input id="teacherName">
     </div>
 
     <div>
-      <label>Observer Name<br><span class="ar">اسم الملاحظ</span></label>
+      <label>Observer Name</label>
       <input id="observerName">
     </div>
 
     <div>
-      <label>Date<br><span class="ar">التاريخ</span></label>
+      <label>Date</label>
       <input type="date" id="date">
     </div>
 
     <div>
-      <label>Time<br><span class="ar">الوقت</span></label>
+      <label>Time</label>
       <input type="time" id="time">
     </div>
   </div>
 
-  <!-- TABLE -->
+  <!-- OBSERVATION TABLE -->
   <table>
     <thead>
       <tr>
-        <th>
-          Area<br><span class="ar">المجال</span>
-        </th>
-        <th>
-          Observation<br><span class="ar">الملاحظة</span>
-        </th>
-        <th>
-          Comments<br><span class="ar">التعليقات</span>
-        </th>
+        <th>Area</th>
+        <th>Observation</th>
+        <th>Comments</th>
       </tr>
     </thead>
-
     <tbody>
 
-      <!-- ROW 1 -->
       <tr>
+        <td>Lesson Objectives & Success Criteria</td>
         <td>
-          Lesson Objectives & Success Criteria<br>
-          <span class="ar">أهداف الدرس ومعايير النجاح</span>
+          Objectives clearly stated and match with pacing guides and lesson plans approved for the week.
+        </td>
+        <td>
+          <label><input type="radio" name="r1"> Observed</label>
+          <label><input type="radio" name="r1"> Not Observed</label>
+
+          <select>
+            <option>Insert Quick Comment</option>
+            <option>Clear objectives</option>
+            <option>Objectives need clarification</option>
+          </select>
+
+          <textarea placeholder="Additional comments..."></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Student Engagement</td>
+        <td>
+          Questioning techniques and interactive activities enable student engagement. All activities are suitable for online learning mode.
+        </td>
+        <td>
+          <label><input type="radio" name="r2"> Observed</label>
+          <label><input type="radio" name="r2"> Not Observed</label>
+
+          <select>
+            <option>Insert Quick Comment</option>
+            <option>High student engagement</option>
